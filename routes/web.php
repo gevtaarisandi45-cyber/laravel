@@ -7,3 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/product', [ProductController::class,'index']);
+Route::resource('/products', ProductController::class);
